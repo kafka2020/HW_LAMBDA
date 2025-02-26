@@ -16,5 +16,13 @@ public class Main {
         } catch (ArithmeticException e) {
             System.out.println("Error: " + e.getMessage());
         }
+
+//        Задача 2
+
+        OnTaskDoneListener listener = System.out::println;
+
+        Worker worker = new Worker(listener);
+        worker.start();
     }
 }
+
